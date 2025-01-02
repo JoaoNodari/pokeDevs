@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(3px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+main .pokedevs {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev {
+    display: none;
+    max-width: 360px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev .cartao-topo{
+    padding: 30px 40px 0;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev .cartao-topo .detalhes {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev .cartao-topo .nome {
+    margin-bottom: 5px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev .cartao-topo .tipo {
+    background-color: #FFF;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev.aberto {
+    display: block;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-pokedev img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-informacoes {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+    max-width: 45px;
+}
+
+main .pokedevs .cartoes-pokedev .cartao-informacoes .descricao {
+    padding: 0 10px;
+    max-height: 150px;
+    font-size: 15px;
+    overflow-y: scroll;
+}
+
+.tipo-eletrico {
+    background-color: #FCC719;
+}
+
+.tipo-fogo {
+    background-color: #F15000d2;
+}
+
+.tipo-agua {
+    background-color: #015C98;
+}
+
+.tipo-grama {
+    background-color: #49D0B0;
+}
+
+.tipo-trevas {
+    background-color: #BA68C8;
+}
+
+.tipo-fada {
+    background-color: #C29791;
+}
+
+main .pokedevs .listagem {
+    max-width: 200px;
+}
+
+main .pokedevs .listagem .pokedev {
+    background-color: #6B727A;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: 0.15 ease-in-out;
+    opacity: 0.8;
+}
+
+main .pokedevs .listagem .pokedev:hover {
+    background-color: #256ab9;
+    opacity: 10;
+    transform: scale(1.05);
+}
+
+main .pokedevs .listagem .pokedev img {
+    width: 25%;
+}
+
+main .pokedevs .listagem .pokedev.ativa {
+    background-color: #256ab9;
+}

@@ -1,0 +1,39 @@
+@media(max-width: 750px) {
+    main .pokedevs {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .cartao-pokedev {
+        max-width: 300px;
+    }
+
+    main .pokedevs .cartoes-pokedev .cartao-informacoes {
+        padding: 50px 30px 30px;
+        margin-top: -50px;
+    }
+
+    main .pokedevs .cartoes-pokedev .cartao-informacoes h3 {
+        font-size: 20px;
+    }
+
+    main .pokedevs .listagem {
+        max-width: 490px;
+    }
+
+    main .pokedevs .listagem .pokedev {
+        width: 95%;
+        border-radius: 10px;
+        margin-bottom: 0;
+
+    }
+
+    main .pokedevs .listagem ul {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+}
